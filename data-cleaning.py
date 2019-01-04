@@ -1,0 +1,114 @@
+from sklearn import  svm, metrics
+import numpy as np
+import csv
+
+training_data = np.loadtxt('training.csv',delimiter=',',dtype='str')
+
+#calculate average for RAM
+summary =0
+count = 0
+ram_values = training_data[:,1]
+for value in ram_values :
+    if(value == "" ):
+        continue
+    numeric_value = value.astype(np.float)
+    if(numeric_value > 32 ):
+        continue
+    summary += numeric_value
+    count +=1
+    #print(value)
+
+ram_avg = summary / count
+ram_avg = "%.2f" % ram_avg
+
+#replace RAM values
+for row in training_data :
+    value = row[1]
+    if (value == ''):
+        row[1] = ram_avg
+    numeric_value = row[1].astype(np.float)
+    if (numeric_value > 32):
+        row[1] = ram_avg
+
+
+#calculate average for SIZE
+summary=0
+count=0
+size_values = training_data[:,2]
+for value in size_values :
+    if(value == "" ):
+        continue
+    numeric_value = value.astype(np.float)
+    summary += numeric_value
+    count +=1
+    #print(value)
+
+size_avg = summary / count
+size_avg = "%.2f" % size_avg
+
+#replace SIZE values
+for row in training_data :
+    value = row[2]
+    if (value == ''):
+        row[2] = size_avg
+    numeric_value = row[1].astype(np.float)
+
+#calculate average for ROM
+summary=0
+count=0
+rom_values = training_data[:,1:4]
+for ram_value,size,rom_value in rom_values :
+    if(rom_value == "" ):
+        continue
+    numeric_rom_value = rom_value.astype(np.float)
+    numeric_ram_value = ram_value.astype(np.float)
+    if(numeric_rom_value <= numeric_ram_value):
+        continue
+
+    #ram_avg_numeric = ram_avg.astype(np.float)
+    summary += numeric_rom_value
+    count +=1
+    #print(value)
+
+rom_avg = summary / count
+rom_avg = "%.2f" % rom_avg
+
+#replace ROM values
+for row in training_data :
+    if (row[3] == ''):
+        row[3] = rom_avg
+
+    numeric_ram_value = row[1].astype(np.float)
+    numeric_rom_value = row[3].astype(np.float)
+
+    if (numeric_rom_value <= numeric_ram_value):
+        row[3] = rom_avg
+    numeric_value = row[1].astype(np.float)
+
+
+#calculate average for Weight
+summary=0
+count=0
+rom_values = training_data[:,4]
+for value in rom_values :
+    if(value == "" ):
+        continue
+    numeric_weight_value = value.astype(np.float)
+
+    summary += numeric_weight_value
+    count +=1
+
+weight_avg = summary / count
+weight_avg = "%.2f" % weight_avg
+print(weight_avg)
+
+#replace Weight values
+for row in training_data :
+    if (row[4] == ''):
+        row[4] = weight_avg
+
+
+with open('export.csv', "w", newline='') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    for data in training_data:
+        writer.writerow(data)
