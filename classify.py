@@ -24,8 +24,10 @@ unknown = classifier.predict(prediction_data)
 init_file_data = np.loadtxt('initial_data/test_classification_unlabeled.csv', delimiter=',', dtype='str')
 with open('results/predictions.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
+    first_row = np.append(init_file_data[0], ['class'])
+    writer.writerow(first_row)
     i = 0
-    for row in init_file_data[:, 1:]:
+    for row in init_file_data[1:, :]:
         row = np.append(row, [unknown[i]])
         print(row)
         writer.writerow(row)
