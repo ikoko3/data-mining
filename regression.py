@@ -3,7 +3,7 @@ from sklearn.svm import SVR
 import csv
 import matplotlib.pyplot as plt
 
-my_data = np.loadtxt('edited_data/export2.csv',delimiter=',', dtype='str')
+my_data = np.loadtxt('edited_data/dataset_regression_edited.csv',delimiter=',', dtype='str')
 prediction_data = np.loadtxt('edited_data/regression_unlabeled_edited.csv', delimiter=',', dtype='str')
 
 training_data = my_data[:, 0:7]

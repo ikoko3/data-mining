@@ -13,11 +13,11 @@
     <SUITE FILE_PATH="coverage/ml$plot_iris__1_.coverage" NAME="plot_iris (1) Coverage Results" MODIFIED="1527805819826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$compare_regression.coverage" NAME="compare_regression Coverage Results" MODIFIED="1547294872897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$compare_classifiers.coverage" NAME="compare_classifiers Coverage Results" MODIFIED="1547294879717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/data_mining$classify.coverage" NAME="classify Coverage Results" MODIFIED="1547295388119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/data_mining$classify.coverage" NAME="classify Coverage Results" MODIFIED="1547295828524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$Nosetests_in_test_classifiers_py.coverage" NAME="Nosetests in test_classifiers.py Coverage Results" MODIFIED="1547069259175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ml$let_rec.coverage" NAME="let-rec Coverage Results" MODIFIED="1546615290349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/data_mining$regression.coverage" NAME="regression Coverage Results" MODIFIED="1547294712798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$preload_data.coverage" NAME="preload_data Coverage Results" MODIFIED="1547294827832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/data_mining$regression.coverage" NAME="regression Coverage Results" MODIFIED="1547307577597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$let_rec.coverage" NAME="let-rec Coverage Results" MODIFIED="1547056640410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_mining$data_cleaning.coverage" NAME="data-cleaning Coverage Results" MODIFIED="1547294834828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ml$plot_iris.coverage" NAME="plot_iris Coverage Results" MODIFIED="1527805716970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regression.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="-309">
+              <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classify.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="classify.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+            <state relative-caret-position="466">
+              <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -110,8 +110,8 @@
         <option value="$PROJECT_DIR$/data-cleaning.py" />
         <option value="$PROJECT_DIR$/compare_regression.py" />
         <option value="$PROJECT_DIR$/compare_classifiers.py" />
-        <option value="$PROJECT_DIR$/regression.py" />
         <option value="$PROJECT_DIR$/classify.py" />
+        <option value="$PROJECT_DIR$/regression.py" />
       </list>
     </option>
   </component>
@@ -190,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.classify">
+  <component name="RunManager" selected="Python.regression">
     <configuration name="classify" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_mining" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,7 +267,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="preload_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="data_mining" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,26 +280,26 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preload_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/regression.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.preload_data" />
       <item itemvalue="Python.compare_regression" />
       <item itemvalue="Python.data-cleaning" />
       <item itemvalue="Python.compare_classifiers" />
       <item itemvalue="Python.classify" />
+      <item itemvalue="Python.regression" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.regression" />
         <item itemvalue="Python.classify" />
         <item itemvalue="Python.compare_classifiers" />
         <item itemvalue="Python.compare_regression" />
         <item itemvalue="Python.data-cleaning" />
-        <item itemvalue="Python.preload_data" />
       </list>
     </recent_temporary>
   </component>
@@ -336,16 +336,17 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3583878" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3583878" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.3296875" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32942432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32897604" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23591924" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43572986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -385,7 +386,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classify.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -658,16 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/predictions_regression_visualization.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/edited_data/regression_unlabeled_edited.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state>
@@ -688,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/predictions_classification_visualization.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
@@ -703,11 +694,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="466">
+          <caret line="51" column="14" lean-forward="true" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/predictions_regression_visualization.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-238">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-309">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
         </state>
       </provider>
     </entry>
