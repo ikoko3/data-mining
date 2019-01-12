@@ -3,6 +3,8 @@ import numpy as np
 import csv
 
 brands = np.loadtxt('edited_data/brands.csv', delimiter=',', dtype='str')
+device_classes = np.loadtxt('edited_data/classes.csv', delimiter=',', dtype='str')
+
 prediction_data_classification = np.loadtxt('initial_data/test_classification_unlabeled.csv', delimiter=',', dtype='str')
 prediction_data_regression = np.loadtxt('initial_data/test_regression_unlabeled.csv', delimiter=',', dtype='str')
 
@@ -10,6 +12,7 @@ prediction_data_regression = np.loadtxt('initial_data/test_regression_unlabeled.
 prediction_data_classification = np.delete(prediction_data_classification, 0, 0)
 prediction_data_regression = np.delete(prediction_data_regression, 0, 0)
 brands = brands[:, 0]
+device_classes = device_classes[:, 0]
 
 # remove id from datasets
 prediction_data_classification = prediction_data_classification[:, 1:]
@@ -75,8 +78,17 @@ for row in prediction_data_regression:
     if row[3] == '':
         row[3] = weight_average
 
-# print(prediction_data)
 
+print(device_classes)
+print(prediction_data_regression)
+for row in prediction_data_regression:
+    device_class = row[5]
+    value = np.where(device_classes == device_class)
+    try:
+        row[5] = value[0][0] + 1
+    except:
+        row[5] = 0
+print(prediction_data_regression)
 
 with open('edited_data/classification_unlabeled_edited.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
@@ -85,5 +97,5 @@ with open('edited_data/classification_unlabeled_edited.csv', "w", newline='') as
 
 with open('edited_data/regression_unlabeled_edited.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
-    for data in prediction_data_classification:
+    for data in prediction_data_regression:
         writer.writerow(data)

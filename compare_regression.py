@@ -3,10 +3,12 @@ from sklearn.svm import SVR
 from sklearn import  svm, metrics
 
 
-my_data = np.loadtxt('edited_data/export.csv',delimiter=',', dtype='str')
+my_data = np.loadtxt('edited_data/dataset_regression_edited.csv',delimiter=',', dtype='str')
 prediction_data = np.loadtxt('edited_data/regression_unlabeled_edited.csv', delimiter=',', dtype='str')
 
-training_data = my_data[:, 0:6]
+training_data = my_data[:, 0:7]
+# remove goal class from training dataset
+training_data = np.delete(training_data, 5, 1)
 validation_data = my_data[:, 5]
 
 X = training_data
@@ -14,8 +16,8 @@ y = validation_data
 
 
 regressions = [
-    SVR(kernel='rbf', C=1e3, gamma=0.2),
-    SVR(kernel='linear', C=1e3),
+    SVR(kernel='rbf', C=1e3, gamma=0.05),
+    SVR(kernel='linear', C=0.8, gamma=0.05),
 ]
 
 

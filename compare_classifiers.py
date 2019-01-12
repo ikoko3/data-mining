@@ -4,7 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
 
-my_data = np.loadtxt('edited_data/export.csv',delimiter=',', dtype='str')
+my_data = np.loadtxt('edited_data/dataset_regression_edited.csv',delimiter=',', dtype='str')
 
 training_data = my_data[:, 0:6]
 validation_data = my_data[:, 6]

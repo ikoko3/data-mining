@@ -135,13 +135,13 @@ with open('edited_data/brands.csv', "w", newline='') as csv_file:
         writer.writerow(row)
         i += 1
 
-with open('edited_data/export.csv', "w", newline='') as csv_file:
+with open('edited_data/dataset_classification_edited.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
     for data in training_data:
         writer.writerow(data)
 
 
-# not used
+# used for visualization
 # convert class to integer
 # create brands enum
 device_classes = []
@@ -156,7 +156,7 @@ for row in training_data:
     device_class = row[6]
     row[6] = device_classes.index(device_class) + 1
 
-with open('edited_data/export2.csv', "w", newline='') as csv_file:
+with open('edited_data/dataset_regression_edited.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
     for data in training_data:
         writer.writerow(data)
