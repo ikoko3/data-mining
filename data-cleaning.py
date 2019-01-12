@@ -139,3 +139,32 @@ with open('edited_data/export.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
     for data in training_data:
         writer.writerow(data)
+
+
+# not used
+# convert class to integer
+# create brands enum
+device_classes = []
+for row in training_data:
+    device_class = row[6]
+    if device_class not in device_classes:
+        device_classes.append(device_class)
+
+
+# replace in a different loop
+for row in training_data:
+    device_class = row[6]
+    row[6] = device_classes.index(device_class) + 1
+
+with open('edited_data/export2.csv', "w", newline='') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    for data in training_data:
+        writer.writerow(data)
+
+with open('edited_data/classes.csv', "w", newline='') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    i = 1
+    for device_class in device_classes:
+        row = [device_class, i]
+        writer.writerow(row)
+        i += 1

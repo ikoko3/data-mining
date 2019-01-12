@@ -23,5 +23,5 @@ for rg in regressions:
     rg.fit(training_data[:1500], validation_data[:1500])
     expected = validation_data[681:].astype(np.float)
     predicted = rg.predict(training_data[681:])
-    print("Regression report for classifier %s:\n%s\n"
+    print("Regression report for regression %s:\n%s\n"
           % (rg, metrics.explained_variance_score(expected, predicted)))
