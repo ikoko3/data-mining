@@ -34,10 +34,14 @@ with open('results/predictions_regression_whole_dataset.csv', "w", newline='') a
         i += 1
 
 with open('results/predictions_regression.csv', "w", newline='') as csv_file:
-    writer = csv.writer(csv_file)
-    for row in predictions:
-        price = "%.2f" % row
-        writer.writerow([price])
+    writer = csv.writer(csv_file, delimiter=',')
+    i = 0
+    for row in init_file_data[1:, 0]:
+        price = "%.2f" % predictions[i]
+        row = np.append(row, [price])
+        writer.writerow(row)
+        i += 1
+
 
 
 with open('results/predictions_regression_visualization.csv', "w", newline='') as csv_file:

@@ -30,9 +30,13 @@ with open('results/predictions_classification_whole_dataset.csv', "w", newline='
         i += 1
 
 with open('results/predictions_classification.csv', "w", newline='') as csv_file:
-    writer = csv.writer(csv_file)
-    for row in unknown:
-        writer.writerow([row])
+    writer = csv.writer(csv_file, delimiter=',')
+    i = 0
+    for row in init_file_data[1:, 0]:
+        row = np.append(row, [unknown[i]])
+        print(row)
+        writer.writerow(row)
+        i += 1
 
 # only for visualization
 device_classes = np.loadtxt('edited_data/classes.csv', delimiter=',', dtype='str')
