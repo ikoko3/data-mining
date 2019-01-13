@@ -21,7 +21,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 254,2.0,5.5,16.0,155.75,MLS,149.0,smartphone
 255,8.0,15.6,256.0,1970.0,Dell,1949.0,laptop
 258,16.0,15.6,512.0,1930.0,Dell,1388.0,laptop
-264,16.0,15.0,1.0,1905.0,Microsoft,3900.0,tablet
+264,16.0,15.0,1.0,1905.0,Microsoft,3900.0,laptop
 269,4.0,10.8,32.0,686.5,MLS,346.19,tablet
 298,4.0,14.0,256.0,1740.0,Lenovo,688.0,laptop
 338,16.0,13.5,512.0,1642.0,Microsoft,2820.0,tablet
@@ -215,7 +215,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 2133,4.0,15.6,,2200.0,Dell,529.0,laptop
 2138,1.0,7.0,8.0,330.0,eStar,59.0,tablet
 2148,16.0,15.6,512.0,2000.0,Lenovo,1799.0,laptop
-2160,32.0,14.0,1.0,2170.0,HP,3380.5,tablet
+2160,32.0,14.0,1.0,2170.0,HP,3380.5,laptop
 2174,1.0,7.0,8.0,330.0,MLS,83.0,tablet
 2178,1.0,8.0,16.0,348.0,MLS,109.0,tablet
 2189,2.0,,32.0,398.0,Nintendo,280.0,console

@@ -33,7 +33,7 @@ with open('results/predictions_regression_whole_dataset.csv', "w", newline='') a
         writer.writerow(row)
         i += 1
 
-with open('results/predictions_regression.csv', "w", newline='') as csv_file:
+with open('results/predictions_regression_with_id.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
     i = 0
     for row in init_file_data[1:, 0]:
@@ -42,7 +42,11 @@ with open('results/predictions_regression.csv', "w", newline='') as csv_file:
         writer.writerow(row)
         i += 1
 
-
+with open('results/predictions_regression.csv', "w", newline='') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    for row in predictions:
+        price = "%.2f" % row
+        writer.writerow([price])
 
 with open('results/predictions_regression_visualization.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')

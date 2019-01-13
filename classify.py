@@ -29,14 +29,19 @@ with open('results/predictions_classification_whole_dataset.csv', "w", newline='
         writer.writerow(row)
         i += 1
 
-with open('results/predictions_classification.csv', "w", newline='') as csv_file:
+with open('results/predictions_classification_with_id.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
     i = 0
     for row in init_file_data[1:, 0]:
         row = np.append(row, [unknown[i]])
-        print(row)
         writer.writerow(row)
         i += 1
+
+with open('results/predictions_classification.csv', "w", newline='') as csv_file:
+    writer = csv.writer(csv_file, delimiter=',')
+    for row in unknown:
+        writer.writerow([row])
+
 
 # only for visualization
 device_classes = np.loadtxt('edited_data/classes.csv', delimiter=',', dtype='str')
