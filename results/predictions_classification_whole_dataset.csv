@@ -8,7 +8,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 81,16.0,14.0,512.0,1580.0,Lenovo,2367.0,laptop
 87,2.0,5.45,16.0,155725,Meizu,113.0,smartphone
 109,1.0,10.1,16.0,800.0,Denver,78.97,tablet
-119,500.0,7.0,8.0,264.0,Crypto,51.64,smartphone
+119,500.0,7.0,8.0,264.0,Crypto,51.64,tablet
 132,6.0,6.21,256.0,201.68,Xiaomi,559.9,smartphone
 157,3.0,5.5,32.0,161.5,Asus,182.0,smartphone
 181,16.0,13.9,512.0,1330.0,Huawei,2149.0,laptop
@@ -21,7 +21,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 254,2.0,5.5,16.0,155.75,MLS,149.0,smartphone
 255,8.0,15.6,256.0,1970.0,Dell,1949.0,laptop
 258,16.0,15.6,512.0,1930.0,Dell,1388.0,laptop
-264,16.0,15.0,1.0,1905.0,Microsoft,3900.0,laptop
+264,16.0,15.0,1.0,1905.0,Microsoft,3900.0,tablet
 269,4.0,10.8,32.0,686.5,MLS,346.19,tablet
 298,4.0,14.0,256.0,1740.0,Lenovo,688.0,laptop
 338,16.0,13.5,512.0,1642.0,Microsoft,2820.0,tablet
@@ -39,7 +39,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 473,1.0,10.1,8.0,550.0,Fluo,129.0,tablet
 516,1.0,8.0,8.0,,Bitmore,69.9,tablet
 523,4.0,10.8,32.0,686.5,MLS,346.19,tablet
-559,500.0,7.0,8.0,289.0,eStar,59.0,smartphone
+559,500.0,7.0,8.0,289.0,eStar,59.0,tablet
 567,8.0,15.6,,2020.0,Dell,715.0,laptop
 597,4.0,6.4,128.0,181.6,Xiaomi,422.0,smartphone
 612,4.0,5.6,64.0,167.2,Samsung,346.8,smartphone
@@ -62,7 +62,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 754,4.0,15.6,128.0,2200.0,Lenovo,309.0,laptop
 778,2.0,5.5,32.0,158.5,Samsung,134.99,smartphone
 784,8.0,15.6,256.0,1770.0,HP,591.0,laptop
-788,500.0,7.0,8.0,516.0,Bitmore,43.9,smartphone
+788,500.0,7.0,8.0,516.0,Bitmore,43.9,tablet
 804,4.0,15.6,,2200.0,Lenovo,284.0,laptop
 806,4.0,15.6,,2100.0,HP,559.0,laptop
 819,6.0,6.2,128.0,176.8,Samsung,756.0,smartphone
@@ -190,7 +190,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 1833,4.0,14.0,32.0,1220.0,Vero,198.0,laptop
 1860,1.0,8.0,8.0,380.0,Fluo,88.9,tablet
 1884,2.0,5.99,16.0,155995,Huawei,151.0,smartphone
-1914,500.0,7.0,8.0,264.0,Crypto,51.64,smartphone
+1914,500.0,7.0,8.0,264.0,Crypto,51.64,tablet
 1929,8.0,13.3,256.0,1300.0,Xiaomi,969.9,laptop
 1930,,12.9,64.0,631.0,Apple,1378.9,tablet
 1937,1.5,8.0,16.0,393.0,Samsung,382.0,tablet
@@ -215,7 +215,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 2133,4.0,15.6,,2200.0,Dell,529.0,laptop
 2138,1.0,7.0,8.0,330.0,eStar,59.0,tablet
 2148,16.0,15.6,512.0,2000.0,Lenovo,1799.0,laptop
-2160,32.0,14.0,1.0,2170.0,HP,3380.5,laptop
+2160,32.0,14.0,1.0,2170.0,HP,3380.5,tablet
 2174,1.0,7.0,8.0,330.0,MLS,83.0,tablet
 2178,1.0,8.0,16.0,348.0,MLS,109.0,tablet
 2189,2.0,,32.0,398.0,Nintendo,280.0,console
@@ -232,7 +232,7 @@ id,RAM,Size,Storage,Weight,brand,price,class
 2284,2.0,11.6,32.0,720.0,MLS,199.0,tablet
 2286,2.0,12.0,500.0,2800.0,Sony,336.0,console
 2300,8.0,15.6,,2200.0,Asus,949.0,laptop
-2306,500.0,7.0,8.0,264.0,Crypto,51.64,smartphone
+2306,500.0,7.0,8.0,264.0,Crypto,51.64,tablet
 2314,8.0,17.3,,2500.0,HP,874.0,laptop
 2321,16.0,14.0,512.0,1320.0,Lenovo,2207.0,laptop
 2329,1.0,10.1,8.0,533.0,Bitmore,85.0,tablet
