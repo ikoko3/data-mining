@@ -47,7 +47,7 @@ for row in prediction_data_classification:
         row[0] = ram_average
     numeric_value = row[0].astype(np.float)
     if numeric_value > 32:
-        row[1] = ram_average
+        row[0] = ram_average
     if row[1] == '':
         row[1] = size_average
     if row[2] == '':
@@ -58,6 +58,9 @@ for row in prediction_data_classification:
         row[3] = rom_average
     numeric_value = row[1].astype(np.float)
     if row[3] == '':
+        row[3] = weight_average
+    numeric_value = row[3].astype(np.float)
+    if numeric_value > 5500:
         row[3] = weight_average
 
 for row in prediction_data_regression:
@@ -65,7 +68,7 @@ for row in prediction_data_regression:
         row[0] = ram_average
     numeric_value = row[0].astype(np.float)
     if numeric_value > 32:
-        row[1] = ram_average
+        row[0] = ram_average
     if row[1] == '':
         row[1] = size_average
     if row[2] == '':
@@ -77,10 +80,12 @@ for row in prediction_data_regression:
     numeric_value = row[1].astype(np.float)
     if row[3] == '':
         row[3] = weight_average
-
+    numeric_value = row[3].astype(np.float)
+    if numeric_value > 5500:
+        row[3] = weight_average
 
 print(device_classes)
-print(prediction_data_regression)
+
 for row in prediction_data_regression:
     device_class = row[5]
     value = np.where(device_classes == device_class)
@@ -88,7 +93,7 @@ for row in prediction_data_regression:
         row[5] = value[0][0] + 1
     except:
         row[5] = 0
-print(prediction_data_regression)
+
 
 with open('edited_data/classification_unlabeled_edited.csv', "w", newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',')
