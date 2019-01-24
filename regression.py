@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.svm import SVR
+from sklearn.tree import DecisionTreeRegressor
 import csv
 import matplotlib.pyplot as plt
 
@@ -17,8 +17,8 @@ y = validation_data
 
 # #############################################################################
 # Fit regression model
-svr = SVR(kernel='rbf', C=1e3, gamma=0.05)
-predictions = svr.fit(X, y).predict(prediction_data)
+regressor = DecisionTreeRegressor(max_depth=50, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True)
+predictions = regressor.fit(X, y).predict(prediction_data)
 
 
 init_file_data = np.loadtxt('initial_data/test_regression_unlabeled.csv', delimiter=',', dtype='str')

@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.svm import SVR
 from sklearn import  svm, metrics
+from sklearn.tree import DecisionTreeRegressor
 
 
 my_data = np.loadtxt('edited_data/dataset_regression_edited.csv',delimiter=',', dtype='str')
@@ -18,6 +19,7 @@ y = validation_data
 regressions = [
     SVR(kernel='rbf', C=1e3, gamma=0.05),
     SVR(kernel='linear', C=0.8, gamma=0.05),
+    DecisionTreeRegressor(max_depth=50, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True )
 ]
 
 
