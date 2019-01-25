@@ -19,7 +19,7 @@ y = validation_data
 regressions = [
     SVR(kernel='rbf', C=1e3, gamma=0.05),
     SVR(kernel='linear', C=0.8, gamma=0.05),
-    DecisionTreeRegressor(max_depth=50, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True )
+    DecisionTreeRegressor(max_depth=15, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True )
 ]
 
 

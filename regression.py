@@ -17,7 +17,7 @@ y = validation_data
 
 # #############################################################################
 # Fit regression model
-regressor = DecisionTreeRegressor(max_depth=50, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True)
+regressor = DecisionTreeRegressor(max_depth=15, criterion='friedman_mse', splitter='best', min_samples_leaf=2, presort=True)
 predictions = regressor.fit(X, y).predict(prediction_data)
 
 
